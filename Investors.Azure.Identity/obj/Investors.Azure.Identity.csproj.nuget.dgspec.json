@@ -1,0 +1,169 @@
+{
+  "format": 1,
+  "restore": {
+    "/Volumes/D/GrupoMacro/flow/Applications/inversionistas/Investors.Azure.Identity/Investors.Azure.Identity.csproj": {}
+  },
+  "projects": {
+    "/Volumes/D/GrupoMacro/flow/Applications/inversionistas/Investors.Azure.Identity/Investors.Azure.Identity.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Volumes/D/GrupoMacro/flow/Applications/inversionistas/Investors.Azure.Identity/Investors.Azure.Identity.csproj",
+        "projectName": "Investors.Azure.Identity",
+        "projectPath": "/Volumes/D/GrupoMacro/flow/Applications/inversionistas/Investors.Azure.Identity/Investors.Azure.Identity.csproj",
+        "packagesPath": "/Users/pplaza/.nuget/packages/",
+        "outputPath": "/Volumes/D/GrupoMacro/flow/Applications/inversionistas/Investors.Azure.Identity/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/pplaza/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "/usr/local/share/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/Volumes/D/GrupoMacro/flow/Applications/inversionistas/Investors.Shared/Investors.Shared.csproj": {
+                "projectPath": "/Volumes/D/GrupoMacro/flow/Applications/inversionistas/Investors.Shared/Investors.Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Azure.Identity": {
+              "target": "Package",
+              "version": "[1.6.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.Graph": {
+              "target": "Package",
+              "version": "[5.20.0, )"
+            },
+            "Microsoft.Identity.Client": {
+              "target": "Package",
+              "version": "[4.55.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.201/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Volumes/D/GrupoMacro/flow/Applications/inversionistas/Investors.Shared/Investors.Shared.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Volumes/D/GrupoMacro/flow/Applications/inversionistas/Investors.Shared/Investors.Shared.csproj",
+        "projectName": "Investors.Shared",
+        "projectPath": "/Volumes/D/GrupoMacro/flow/Applications/inversionistas/Investors.Shared/Investors.Shared.csproj",
+        "packagesPath": "/Users/pplaza/.nuget/packages/",
+        "outputPath": "/Volumes/D/GrupoMacro/flow/Applications/inversionistas/Investors.Shared/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/pplaza/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "/usr/local/share/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "allWarningsAsErrors": true,
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Ardalis.GuardClauses": {
+              "target": "Package",
+              "version": "[4.0.1, )"
+            },
+            "CSharpFunctionalExtensions": {
+              "target": "Package",
+              "version": "[2.40.0, )"
+            },
+            "Hangfire": {
+              "target": "Package",
+              "version": "[1.8.4, )"
+            },
+            "Hangfire.MemoryStorage": {
+              "target": "Package",
+              "version": "[1.8.0, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[12.1.1, )"
+            },
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "QRCoder": {
+              "target": "Package",
+              "version": "[1.4.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.201/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

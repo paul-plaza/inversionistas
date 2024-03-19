@@ -1,0 +1,58 @@
+﻿using Investors.Client.Users.Domain.Entities.Transactions;
+using Investors.Shared.Constants;
+using Investors.Shared.Domain.ValueObjects;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
+
+namespace Investors.Repository.EF.Users.Configuration.Transactions
+{
+    internal class CashbackDetailConfiguration : IEntityTypeConfiguration<CashbackDetail>
+    {
+        public void Configure(EntityTypeBuilder<CashbackDetail> builder)
+        {
+            builder.ToTable(nameof(CashbackDetail)).HasKey(e => e.Id);
+
+            builder.Property(x => x.Id)
+                .HasDefaultValueSql(string.Format(AuditMetaDataConstants.Sequence, nameof(CashbackDetail)))
+                .HasColumnOrder(0)
+                .IsRequired()
+                .HasComment(string.Format(AuditMetaDataConstants.Id, "int"));
+
+            builder.Property(x => x.MenuId)
+                .HasColumnOrder(1)
+                .IsRequired()
+                .HasComment("Id de menú");
+
+            builder.Property(x => x.Points)
+                .HasColumnOrder(2)
+                .IsRequired()
+                .HasComment("Puntos que costó el movimiento");
+
+            builder.Property(e => e.CreatedBy)
+                .HasColumnOrder(3)
+                .IsRequired()
+                .HasComment(AuditMetaDataConstants.CreatedBy);
+
+            builder.Property(e => e.CreatedOn)
+                .HasColumnOrder(4)
+                .IsRequired()
+                .HasComment(AuditMetaDataConstants.CreatedOn);
+
+            builder.Property(e => e.UpdatedBy)
+                .HasColumnOrder(5)
+                .IsRequired(false)
+                .HasComment(AuditMetaDataConstants.UpdatedBy);
+
+            builder.Property(e => e.UpdatedOn)
+                .HasColumnOrder(6)
+                .IsRequired(false)
+                .HasComment(AuditMetaDataConstants.UpdatedOn);
+
+            builder.Property(p => p.Status)
+                .HasColumnOrder(7)
+                .IsRequired()
+                .HasComment(AuditMetaDataConstants.Status)
+                .HasConversion(p => p.Value, p => Status.From(p));
+        }
+    }
+}

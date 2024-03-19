@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.Identity.Web" Version="2.13.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\Investors.Azure.Identity\Investors.Azure.Identity.csproj" />
+        <ProjectReference Include="..\Investors.Client\Investors.Client.csproj" />
+        <ProjectReference Include="..\Investors.OneSignal\Investors.OneSignal.csproj" />
+        <ProjectReference Include="..\Investors.Repository.EF\Investors.Repository.EF.csproj" />
+        <ProjectReference Include="..\Investors.Shared.Presentation\Investors.Shared.Presentation.csproj" />
+        <ProjectReference Include="..\Investors.Shared\Investors.Shared.csproj" />
+    </ItemGroup>
+
+</Project>

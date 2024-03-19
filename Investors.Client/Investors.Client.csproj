@@ -1,0 +1,75 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>annotations</Nullable>
+    <NullableReferenceTypes>true</NullableReferenceTypes>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Investors.Shared\Class1.cs" />
+    <Compile Remove="Investors.Shared\obj\Debug\net7.0\.NETCoreApp,Version=v7.0.AssemblyAttributes.cs" />
+    <Compile Remove="Investors.Shared\obj\Debug\net7.0\Investors.Shared.AssemblyInfo.cs" />
+    <Compile Remove="Investors.Shared\obj\Debug\net7.0\Investors.Shared.GlobalUsings.g.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Investors.Shared\obj\Investors.Shared.csproj.nuget.g.targets" />
+    <None Remove="Investors.Shared\obj\Investors.Shared.csproj.nuget.g.props" />
+    <None Remove="Investors.Shared\obj\project.nuget.cache" />
+    <None Remove="Investors.Shared\obj\Investors.Shared.csproj.nuget.dgspec.json" />
+    <None Remove="Investors.Shared\obj\project.assets.json" />
+    <None Remove="Investors.Shared\obj\Debug\net7.0\Investors.Shared.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Remove="Investors.Shared\obj\Debug\net7.0\Investors.Shared.assets.cache" />
+    <None Remove="Investors.Shared\obj\Debug\net7.0\Investors.Shared.csproj.AssemblyReference.cache" />
+    <None Remove="Investors.Shared\obj\Debug\net7.0\Investors.Shared.AssemblyInfoInputs.cache" />
+    <None Remove="Users\" />
+    <None Remove="Shared\" />
+    <None Remove="Operations\" />
+    <None Remove="Operations\Application\" />
+    <None Remove="Operations\Application\Commands\" />
+    <None Remove="Operations\Application\Exceptions\" />
+    <None Remove="Operations\Application\Querys\" />
+    <None Remove="Users\Application\" />
+    <None Remove="Users\Application\Commands\" />
+    <None Remove="Users\Application\Exceptions\" />
+    <None Remove="Users\Application\Querys\" />
+    <None Remove="Operations\Domain\" />
+    <None Remove="Operations\Exceptions\" />
+    <None Remove="Operations\Infrastructure\" />
+    <None Remove="Users\Domain\" />
+    <None Remove="Users\Infrastructure\" />
+    <None Remove="Operations\Specifications\" />
+    <None Remove="Users\Specifications\" />
+    <None Remove="Shared\Infrastructure\" />
+    <None Remove="Shared\Infrastructure\Persistence\" />
+    <None Remove="Shared\Infrastructure\Contracts\" />
+    <None Remove="Users\Domain\Aggregate\" />
+    <None Remove="Users\Domain\Entities\" />
+    <None Remove="Users\Domain\Events\" />
+    <None Remove="Users\Domain\Exceptions\" />
+    <None Remove="Users\Domain\Services\" />
+    <None Remove="Users\Domain\ValueObjects\" />
+    <None Remove="Users\Domain\BackgroundServices\" />
+    <None Remove="Users\Domain\Entities\Invoices\" />
+    <None Remove="Users\Domain\Entities\Movements\" />
+    <None Remove="Users\Domain\Repositories\" />
+    <None Remove="Users\Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Shared\" />
+    <Folder Include="Users\Application\Exceptions\" />
+    <Folder Include="Shared\Infrastructure\" />
+    <Folder Include="Users\Domain\Exceptions\" />
+    <Folder Include="Users\Domain\Services\" />
+    <Folder Include="Users\Domain\BackgroundServices\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Ardalis.Specification" Version="7.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Investors.Kernel.Shared\Investors.Kernel.Shared.csproj" />
+    <ProjectReference Include="..\Investors.Shared\Investors.Shared.csproj" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>annotations</Nullable>
+        <NullableReferenceTypes>true</NullableReferenceTypes>
+        <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Investors.Shared\Investors.Shared.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.ApplicationInsights" Version="2.21.0" />
+      <PackageReference Include="Microsoft.ApplicationInsights.NLogTarget" Version="2.21.0" />
+      <PackageReference Include="NLog.Extensions.Logging" Version="5.3.2" />
+    </ItemGroup>
+
+</Project>

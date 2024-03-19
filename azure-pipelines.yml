@@ -1,0 +1,38 @@
+trigger:
+  - main
+  - develop
+  - test
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+variables:
+  buildConfiguration: 'Release'
+
+steps:
+  - task: DotNetCoreCLI@2
+    displayName: 'Restaurar Client y Admin'
+    inputs:
+      command: 'restore'
+      projects: '**/*.csproj'
+
+  - task: DotNetCoreCLI@2
+    displayName: 'Construir Client y Admin'
+    inputs:
+      command: 'build'
+      arguments: '--configuration $(buildConfiguration)'
+      projects: '**/*.csproj'
+
+  - task: DotNetCoreCLI@2
+    displayName: 'Publicar'
+    inputs:
+      command: 'publish'
+      arguments: '--configuration $(buildConfiguration) --output $(Build.ArtifactStagingDirectory)/client'
+      projects: '**/Investors.Client.Api.csproj'
+
+  - task: PublishBuildArtifacts@1
+    displayName: 'Publicar artefactos'
+    inputs:
+      PathtoPublish: '$(Build.ArtifactStagingDirectory)/client'
+      ArtifactName: 'Artifacts'
+      publishLocation: 'Container'

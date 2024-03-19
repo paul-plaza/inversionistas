@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Investors.Shared\Investors.Shared.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Ardalis.Specification" Version="7.0.0" />
+
+
+
+
+
+
+
+
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Investors\Domain\Dtos\" />
+    </ItemGroup>
+
+
+
+
+</Project>

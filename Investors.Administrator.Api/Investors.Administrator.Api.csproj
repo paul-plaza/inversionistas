@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <UserSecretsId>aspnet-Investors.Administrator.Api-BF0EA2A0-9904-4E8F-8B49-6907529F6121</UserSecretsId>
+        <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="7.0.9" />
+        <PackageReference Include="Microsoft.AspNetCore.Authentication.OpenIdConnect" Version="7.0.9" />
+        <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.9" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.9" />
+        <PackageReference Include="Microsoft.Identity.Web" Version="2.13.1" />
+        <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Include="..\.dockerignore">
+        <Link>.dockerignore</Link>
+      </Content>
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Investors.Administrator.Presentation\Investors.Administrator.Presentation.csproj" />
+      <ProjectReference Include="..\Investors.Administrator\Investors.Administrator.csproj" />
+      <ProjectReference Include="..\Investors.LoggerService\Investors.LoggerService.csproj" />
+      <ProjectReference Include="..\Investors.Provider.Firebase\Investors.Provider.Firebase.csproj" />
+      <ProjectReference Include="..\Investors.Repository.EF\Investors.Repository.EF.csproj" />
+      <ProjectReference Include="..\Investors.Shared.Presentation\Investors.Shared.Presentation.csproj" />
+      <ProjectReference Include="..\Investors.Shared\Investors.Shared.csproj" />
+    </ItemGroup>
+
+</Project>

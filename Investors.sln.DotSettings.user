@@ -1,0 +1,8 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=852a66ae_002Dd398_002D4757_002D9b09_002D837b0bd07df3/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="CreateUser_Input_GUID_FromActiveDirectory_ReturnOk" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;NUnit3x::090100EA-921F-4A90-A556-D7D1D120AD3F::net7.0::Investors.Client.NU.Tests.Users.Domain.Aggregate.UserNUTest&lt;/TestId&gt;
+    &lt;TestId&gt;NUnit3x::090100EA-921F-4A90-A556-D7D1D120AD3F::net7.0::Investors.Client.NU.Tests.Users.Domain.Entities.ProfileNUTest.Create_Initial_Profile_Input_User_OK&lt;/TestId&gt;
+    &lt;TestId&gt;NUnit3x::090100EA-921F-4A90-A556-D7D1D120AD3F::net7.0::Investors.Client.NU.Tests.Users.Application.Commands.CreateUserCommandNUTest&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
